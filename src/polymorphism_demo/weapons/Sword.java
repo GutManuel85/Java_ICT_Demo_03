@@ -1,6 +1,6 @@
 package polymorphism_demo.weapons;
 
-public class Sword extends Weapon{
+public class Sword extends Weapon {
 
     public Sword(String name, int impact, int distance) {
         super(name, impact, distance);
@@ -12,7 +12,7 @@ public class Sword extends Weapon{
         super.distance++;
     }
 
-    public void stab(){
+    public void stab() {
         System.out.println("⚔⚔⚔ Schwerthieb ⚔⚔⚔");
     }
 }

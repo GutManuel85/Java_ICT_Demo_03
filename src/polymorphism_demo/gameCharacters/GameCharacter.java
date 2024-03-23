@@ -9,19 +9,19 @@ public abstract class GameCharacter {
     private Position position;
     private Weapon weapon;
 
-    public GameCharacter(String name, int amountLives, Position position, Weapon weapon){
+    public GameCharacter(String name, int amountLives, Position position, Weapon weapon) {
         this.name = name;
         this.amountLives = amountLives;
         this.position = position;
         this.weapon = weapon;
     }
 
-    public void goForwards(){
+    public void goForwards() {
         float actualPosition = position.getPositionX();
         this.position.setPositionX(actualPosition++);
     }
 
-    public void goBackwards(){
+    public void goBackwards() {
         float actualPosition = position.getPositionX();
         this.position.setPositionX(actualPosition--);
     }
@@ -44,12 +44,8 @@ public abstract class GameCharacter {
 
     @Override
     public String toString() {
-        return "GameCharacter{" +
-                "name='" + name  +
-                ", amountLives=" + amountLives +
-                ", position=" + position +
-                ", weapon=" + weapon +
-                '}';
+        return "GameCharacter{" + "name='" + name + ", amountLives=" + amountLives + ", position=" + position + "," +
+                " weapon=" + weapon + '}';
     }
 }
 

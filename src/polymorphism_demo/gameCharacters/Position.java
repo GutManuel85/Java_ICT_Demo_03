@@ -5,7 +5,7 @@ public class Position {
     private float positionX;
     private float positionY;
 
-    public Position(float positionX, float positionY){
+    public Position(float positionX, float positionY) {
         this.positionX = positionX;
         this.positionY = positionY;
     }

@@ -11,16 +11,16 @@ public class Army {
     ArrayList<Bowman> bowmen;
     ArrayList<CavalryRider> cavalryRiders;
 
-    public Army(int bowmanAmount, int cavalryRiderAmount){
+    public Army(int bowmanAmount, int cavalryRiderAmount) {
         this.bowmen = this.createBowmen(bowmanAmount);
         this.cavalryRiders = this.createCavalryRiders(cavalryRiderAmount);
     }
 
-    public ArrayList<Bowman> createBowmen(int bowmanAmount){
+    public ArrayList<Bowman> createBowmen(int bowmanAmount) {
         ArrayList<Bowman> bowmen = new ArrayList<>();
-        for(int i = 0; i < bowmanAmount; i++){
-            bowmen.add(new Bowman(String.valueOf(i), 5, new Position(0,i),
-                    new Bow("Longbow0",2, 50 , 10)));
+        for (int i = 0; i < bowmanAmount; i++) {
+            bowmen.add(new Bowman(String.valueOf(i), 5, new Position(0, i),
+                    new Bow("Longbow0", 2, 50, 10)));
         }
         return bowmen;
     }
