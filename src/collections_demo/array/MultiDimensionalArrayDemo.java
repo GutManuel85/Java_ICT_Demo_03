@@ -4,22 +4,29 @@ public class MultiDimensionalArrayDemo {
 
     public static void main(String[] args) {
 
-        int[][] twoDimensionalArray = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+        System.out.println("#################### Two-dimensional array #################");
+        char[][] twoDimensionalArray = {{'a', 'b', 'c'}, {'d', 'e', 'f'}, {'g', 'h', 'i'}};
 
         printOut(twoDimensionalArray);
         System.out.println("*************************");
 
-        setToZero(twoDimensionalArray);
+        setToA(twoDimensionalArray);
         printOut(twoDimensionalArray);
 
         System.out.println("*************************");
 
         // One in the middle
-        twoDimensionalArray[1][1] = 1;
+        twoDimensionalArray[1][1] = 'x';
         printOut(twoDimensionalArray);
+
+
+        System.out.println("#################### Three-dimensional array #################");
+        char[][][] threeDimensionalArray = {{{'a', 'b'}, {'d', 'e'}}, {{'g', 'h'},{'i', 'j'}}};
+        printOut(threeDimensionalArray);
+
     }
 
-    private static void printOut(int[][] array) {
+    private static void printOut(char[][] array) {
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array[i].length; j++) {
                 System.out.print(array[i][j]);
@@ -28,10 +35,21 @@ public class MultiDimensionalArrayDemo {
         }
     }
 
-    private static void setToZero(int[][] array) {
+    // Method Overloading
+    private static void printOut(char[][][] array) {
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array[i].length; j++) {
-                array[i][j] = 0;
+                for (int k = 0; k < array[i][j].length; k++) {
+                    System.out.println("Coordinates: (" + i + "/" + j + "/" + k + ") | Value: " + array[i][j][k]);
+                }
+            }
+        }
+    }
+
+    private static void setToA(char[][] array) {
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array[i].length; j++) {
+                array[i][j] = 'a';
             }
         }
     }
