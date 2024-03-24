@@ -17,9 +17,6 @@ public class MultiDimensionalArrayDemo {
         // One in the middle
         twoDimensionalArray[1][1] = 1;
         printOut(twoDimensionalArray);
-
-
-
     }
 
     private static void printOut(int[][] array) {

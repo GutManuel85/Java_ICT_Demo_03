@@ -4,10 +4,6 @@ public class BasicArrayDemo {
 
     public static void main(String[] args) {
 
-
-        // Different types of arrays
-
-
         // Generics like <T> can only be used with Objects and not with primitive data types. Therefor Integer instead int
         Integer[] basicIntegerArray = {1, 2, 3, 4, 5, 6, 7, 8, 9};
 
@@ -17,7 +13,6 @@ public class BasicArrayDemo {
         Character[] basicCharacterArray = {'a', 'b', 'c', 'd', 'd'};
 
 
-        // Methods
         printGenericElements(basicIntegerArray);
         printGenericElements(basicStringArray);
         printGenericElements(basicCharacterArray);
@@ -26,16 +21,15 @@ public class BasicArrayDemo {
         printLength(basicStringArray);
         printLength(basicCharacterArray);
 
-
     }
 
-    public static <T> void printGenericElements(T[] array) {
+    private static <T> void printGenericElements(T[] array) {
         for (T element : array) {
             System.out.println("Das Element ist: " + element);
         }
     }
 
-    public static <T> void printLength(T[] array) {
+    private static <T> void printLength(T[] array) {
         int length = array.length;
         System.out.println("Die Länge des Arrays ist " + length);
     }
