@@ -28,7 +28,7 @@ public class MyStringQueue {
         for(int i = 0; i < this.pointer; i++){
             places[i] = places[i+1];
         }
-        if(pointer != 0){
+        if(pointer > 0){
             pointer--;
         }
         return polledElement;
