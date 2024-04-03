@@ -1,0 +1,25 @@
+Aufgabe: Kriminalitätsbekämpfungssystem
+
+Erstellen Sie ein einfaches Kriminalitätsbekämpfungssystem in Java. Das System sollte die folgenden Klassen umfassen:
+
+Person: Diese Klasse repräsentiert eine Person mit den folgenden Eigenschaften:
+
+- Name
+- Alter
+- Geschlecht
+
+Criminal: Diese Klasse erbt von der Klasse Person und repräsentiert einen Kriminellen. Sie sollte zusätzliche Eigenschaften wie Verbrechenstyp und Fahndungsstatus enthalten.
+
+PoliceOfficer: Diese Klasse erbt ebenfalls von der Klasse Person und repräsentiert einen Polizeibeamten. Sie sollte zusätzliche Eigenschaften wie Dienstgrad und Einsatzgebiet enthalten.
+
+Crime: Diese Klasse repräsentiert ein Verbrechen mit den Eigenschaften Datum, Ort und Art des Verbrechens.
+
+PoliceStation: Diese Klasse repräsentiert eine Polizeistation und enthält eine Liste von Polizeibeamten und eine Liste von Verbrechern. Sie sollte Methoden haben, um Polizeibeamte und Verbrecher hinzuzufügen, Verbrechen zu melden und Verbrecher zu verhaften.
+
+Main: Die Hauptklasse, die das Programm startet. Hier sollten Sie eine Polizeistation erstellen, einige Polizeibeamte und Verbrecher hinzufügen und einige Verbrechen melden und Verbrecher verhaften.
+
+Stellen Sie sicher, dass Sie die Konzepte der OOP wie Klassen, Objekte, Vererbung, Polymorphismus usw. in Ihrer Implementierung berücksichtigen. Dies umfasst die Verwendung von Konstruktoren, Methoden, Datenkapselung und anderen OOP-Prinzipien.
+
+Sie können diese Aufgabe erweitern, indem Sie zusätzliche Funktionen wie das Anzeigen von Berichten über Verbrechen und Verhaftungen hinzufügen.
+
+Viel Erfolg beim Implementieren dieser Aufgabe!
